@@ -1,0 +1,23 @@
+
+# Day 5 - Daily Python Practice
+# Project: Palindrome Checker
+
+def check_palindrome(value):
+    value = value.lower().replace(" ", "")
+
+    if value == value[::-1]:
+        return True
+    else:
+        return False
+
+
+print("===== PALINDROME CHECKER =====")
+
+text = input("Enter a word or number: ")
+
+if check_palindrome(text):
+    print(text, "is a Palindrome!")
+else:
+    print(text, "is NOT a Palindrome.")
+
+print("\nDay 5 completed!")
